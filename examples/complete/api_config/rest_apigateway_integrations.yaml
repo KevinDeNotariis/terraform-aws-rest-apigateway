@@ -1,0 +1,7 @@
+hello-world:
+    lambda_description: Example integration
+    lambda_versions:
+        - v1
+    integration_http_method: ANY
+    integration_full_path: hello-world/{proxy+}
+    integration_request_validator: none
