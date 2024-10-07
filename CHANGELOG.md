@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.0...v1.0.1) (2024-10-07)
+
+
+### Bug Fixes
+
+* fix the authorizer permission matrix variable. ([393bc66](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/393bc6656712316097dfcac325bb6e78d49e1c4e))
+* increase the minimum terraform version to have the optional with defaults ([a29bc25](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/a29bc25c60ef8c0f4bc3265f8dea365be4c76760))
+
 ## 1.0.0 (2024-10-07)
 
 
