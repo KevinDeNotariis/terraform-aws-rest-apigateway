@@ -1,0 +1,17 @@
+admin:
+    -
+        stages:
+            - "*"
+        http_verbs:
+            - "*"
+        resources:
+            - "*"
+user:
+    -
+        stages:
+            - "*"
+        http_verbs:
+            - GET
+            - HEAD
+        resources:
+            - "*"

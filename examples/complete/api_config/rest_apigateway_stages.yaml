@@ -1,0 +1,19 @@
+v1:
+    stage_name: v1
+    usage_plans:
+        admin:
+            quota_limit: 10000
+            quota_offset: 0
+            quota_period: "DAY"
+            throttle_burst: 10
+            throttle_rate: 10
+            api_keys:
+                - global
+        user:
+            quota_limit: 10000
+            quota_offset: 0
+            quota_period: "DAY"
+            throttle_burst: 10
+            throttle_rate: 10
+            api_keys:
+                - global

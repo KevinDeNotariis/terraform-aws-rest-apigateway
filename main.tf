@@ -16,7 +16,7 @@ module "rest_apigateway" {
   apigateway_domain_name                                         = local.apigateway_domain
   apigateway_authorizer_result_ttl                               = var.authorizer_result_ttl
   apigateway_authorizer_lambda_path                              = var.authorizer_lambda_path
-  apigateway_authorizer_permission_matrix_path                   = local.authorizer_permission_matrix_path
+  apigateway_authorizer_permission_matrix_path                   = var.authorizer_permission_matrix_path
   apigateway_authorizer_lambda_layers                            = var.authorizer_lambda_layers
   apigateway_authorizer_lambda_architectures                     = var.authorizer_lambda_architectures
   apigateway_authorizer_lambda_timeout                           = var.authorizer_lambda_timeout
