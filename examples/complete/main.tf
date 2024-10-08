@@ -16,7 +16,7 @@ resource "random_id" "this" {
 
 module "cognito" {
   source  = "KevinDeNotariis/cognito/aws"
-  version = "2.0.1"
+  version = "2.0.2"
 
   prefix      = local.prefix
   identifier  = local.identifier
