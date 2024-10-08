@@ -16,7 +16,7 @@ resource "random_id" "this" {
 
 module "cognito" {
   source  = "KevinDeNotariis/cognito/aws"
-  version = "2.0.0"
+  version = "2.0.1"
 
   prefix      = local.prefix
   identifier  = local.identifier
@@ -38,16 +38,6 @@ module "cognito" {
   invite_sms_message        = "Hello {username}, please sign up at: {####}"
 
   create_dummy_record = true
-
-  user_pool_schemas = [
-    {
-      name                     = "id"
-      attribute_data_type      = "String"
-      developer_only_attribute = false
-      mutable                  = false
-      required                 = false
-    }
-  ]
 
   providers = {
     aws           = aws
