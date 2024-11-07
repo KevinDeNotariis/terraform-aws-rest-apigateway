@@ -68,7 +68,7 @@ module "rest_apigateway_integrations" {
 
   integration_http_method        = each.value.integration_http_method
   integration_full_path          = each.value.integration_full_path
-  integration_resource_id        = module.rest_apigateway_resources.rest_apigateway_resources_map[each.value.integration_full_path]
+  integration_resource_id        = module.rest_apigateway_resources.rest_apigateway_resources_map[each.value.integration_full_path == "/" ? each.value.integration_full_path : trimprefix(each.value.integration_full_path, "/")]
   integration_request_validator  = each.value.integration_request_validator
   integration_request_parameters = lookup(each.value, "integration_request_parameters", {})
   integration_request_model      = lookup(each.value, "integration_request_model", null)
