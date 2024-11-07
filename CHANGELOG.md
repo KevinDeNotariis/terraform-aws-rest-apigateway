@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.5...v1.0.6) (2024-11-07)
+
+
+### Bug Fixes
+
+* fixing the parsing of paths, by removing the leading / if present ([72df17a](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/72df17a7f343646a4644fe47f26bd059e8169f10))
+
 ## [1.0.5](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.4...v1.0.5) (2024-11-07)
 
 
