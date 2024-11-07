@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.1...v1.0.2) (2024-11-07)
+
+
+### Bug Fixes
+
+* allow to specify lambda paths ([dd081b0](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/dd081b0e7e0a8e93c84effe2ab050a4e59b15611))
+
 ## [1.0.1](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.0...v1.0.1) (2024-10-07)
 
 
