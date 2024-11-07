@@ -49,7 +49,7 @@ module "rest_apigateway_integrations" {
 
   lambda_name                              = each.key
   lambda_description                       = each.value.lambda_description
-  lambda_path                              = "${var.integration_lambda_code_base_path}/${each.key}"
+  lambda_path                              = lookup(each.value, "lambda_folder_path", "${var.integration_lambda_code_base_path}/${each.key}")
   lambda_timeout                           = lookup(each.value, "lambda_timeout", var.integration_lambda_default_timeout)
   lambda_layers                            = lookup(each.value, "lambda_layers", var.integration_lambda_default_layers)
   lambda_in_vpc                            = lookup(each.value, "lambda_in_vpc", var.integration_lambda_default_in_vpc)
