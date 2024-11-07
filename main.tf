@@ -46,7 +46,6 @@ module "rest_apigateway_integrations" {
   request_validator_map = module.rest_apigateway.apigateway_request_validators_map
   apigateway_id         = module.rest_apigateway.apigateway_api_id
 
-
   lambda_name                              = "${var.prefix}-${each.key}"
   lambda_description                       = each.value.lambda_description
   lambda_path                              = lookup(each.value, "lambda_folder_path", "${var.integration_lambda_code_base_path}/${each.key}")
@@ -81,7 +80,7 @@ module "rest_apigateway_cors" {
   source = "./modules/rest-apigateway-cors"
 
   apigateway_id           = module.rest_apigateway.apigateway_api_id
-  integration_resource_id = module.rest_apigateway_resources.rest_apigateway_resources_map[each.value.integration_full_path]
+  integration_resource_id = module.rest_apigateway_resources.rest_apigateway_resources_map[each.value.integration_full_path == "/" ? each.value.integration_full_path : trimprefix(each.value.integration_full_path, "/")]
   cors_definition         = each.value.cors_definition
 
   depends_on = [module.rest_apigateway_integrations]

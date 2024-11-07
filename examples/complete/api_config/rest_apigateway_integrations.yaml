@@ -10,7 +10,7 @@ root-lambda:
     lambda_description: Example integration
     lambda_versions:
         - v1
-    integration_http_method: POSTS
+    integration_http_method: POST
     integration_full_path: /
     integration_request_validator: none
 

@@ -128,7 +128,7 @@ resource "aws_api_gateway_documentation_part" "this" {
   location {
     type   = "METHOD"
     method = var.integration_http_method == "ANY" ? "*" : var.integration_http_method
-    path   = "/${var.integration_full_path}"
+    path   = "${var.integration_full_path == "/" ? "" : "/"}${var.integration_full_path}"
   }
 
   properties = jsonencode({
