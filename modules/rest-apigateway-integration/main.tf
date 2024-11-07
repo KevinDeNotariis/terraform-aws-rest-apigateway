@@ -117,7 +117,7 @@ resource "aws_lambda_permission" "lambda_integration" {
     var.apigateway_id,
     each.key,
     upper(var.integration_http_method),
-    var.integration_full_path,
+    var.integration_full_path == "/" ? "" : var.integration_full_path,
   )
 }
 
