@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.9](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.8...v1.0.9) (2024-11-07)
+
+
+### Bug Fixes
+
+* fixing lambda permissions for root / resources ([04c9fdc](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/04c9fdc8cde71628cafd58d65a1f9e529dbb1891))
+
 ## [1.0.8](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.7...v1.0.8) (2024-11-07)
 
 
