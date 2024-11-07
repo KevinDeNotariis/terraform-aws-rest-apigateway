@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.4...v1.0.5) (2024-11-07)
+
+
+### Bug Fixes
+
+* fixing check for root / ([d05a309](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/d05a309758480d8c2304d39ee3e1172f6f928560))
+
 ## [1.0.4](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.3...v1.0.4) (2024-11-07)
 
 
