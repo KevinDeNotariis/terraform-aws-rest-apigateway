@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.7](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.6...v1.0.7) (2024-11-07)
+
+
+### Bug Fixes
+
+* passing the trimmed integration full path to the integration module ([b8b84be](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/b8b84be64f6509e1433719539541077cc0a56f8c))
+
 ## [1.0.6](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.5...v1.0.6) (2024-11-07)
 
 
