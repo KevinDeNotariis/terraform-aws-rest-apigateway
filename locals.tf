@@ -1,7 +1,7 @@
 locals {
   identifier = "${var.environment}-${var.identifier}"
 
-  apigateway_domain = "${var.prefix}.${var.environment}.${var.root_domain}"
+  apigateway_domain = var.apigaetway_domain != "" ? var.apigaetway_domain : "${var.prefix}.${var.environment}.${var.root_domain}"
 
   rest_apigateway_lambdas = yamldecode(file(var.rest_api_integration_lambdas_config_path))
   rest_apigateway_stages  = yamldecode(file(var.rest_api_stages_path))

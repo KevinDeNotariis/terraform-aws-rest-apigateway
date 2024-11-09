@@ -16,6 +16,8 @@ variable "environment" {
 variable "root_domain" {
   description = "The root domain which will be the base of the api gateway domain name"
   type        = string
+  default     = ""
+  nullable    = false
 }
 
 variable "hosted_zone_id" {
@@ -52,6 +54,18 @@ variable "create_apigateway_account" {
   description = "Whether or not create the apigateway account resource to set the IAM role to allow logging"
   type        = bool
   default     = true
+}
+
+variable "apigaetway_domain" {
+  description = "Full domain name to be associated with the api gateway"
+  type        = string
+  default     = ""
+  nullable    = false
+
+  validation {
+    condition     = !(var.apigaetway_domain == "" && var.root_domain == "")
+    error_message = "Either one of apigateway_domain or root_domain must be non-empty"
+  }
 }
 
 #====================================================================================
