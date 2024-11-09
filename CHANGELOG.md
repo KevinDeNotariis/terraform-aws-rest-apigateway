@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.10](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.9...v1.0.10) (2024-11-09)
+
+
+### Bug Fixes
+
+* allow to specify a custom apigateway_domain name ([dd90156](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/commit/dd9015620ef012c546f24b279ea6630cd8ec8543))
+
 ## [1.0.9](https://github.com/KevinDeNotariis/terraform-aws-rest-apigateway/compare/v1.0.8...v1.0.9) (2024-11-07)
 
 
